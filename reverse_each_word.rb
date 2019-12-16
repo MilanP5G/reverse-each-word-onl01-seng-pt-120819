@@ -5,10 +5,15 @@ def reverse_each_word(string)
   array = string.split
   
   array.each do 
-    |words| new_array << words.reverse.join(" ")
+    |words| new_array << words.reverse
 end
 
-return new_array
+return new_arraynew_array =[]
+  array = string.split()
+array.collect do |words|
+   new_array << words.reverse
+  end
+  return new_array.join(" ")
 
 end
 
